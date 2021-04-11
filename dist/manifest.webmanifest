@@ -1,0 +1,17 @@
+{
+    "name": "IM PWA",
+    "short_name": "IM PWA",
+    "description": "PWA IM HEIG-VD",
+    "lang": "fr",
+    "start_url" : "/index.html",
+    "display": "fullscreen",
+    "background_color": "white",
+    "theme_color": "tomato",
+    "icons": [
+      {
+        "src": "android-chrome-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }

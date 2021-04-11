@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Progressive Web App</title>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <div id="wrapper" data-media="desktop">
+        <header>
+            <h1>Progressive Web App</h1>
+        </header>
+        <nav>
+            <ui-button></ui-button>
+            <ul class="nav">
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#todo">Todo</a></li>
+                <li><a href="#bookmarks">Bookmarks</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="page hidden" id="page-schedule">
+                <p>Schedule</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                </p>
+              </section>
+              <section class="page hidden" id="page-todo">
+                <form data-action="create-task">
+                  <label for="input-task">Task</label>
+                  <input id="input-task" type="text" name="task" required>
+                  <label for="input-date">Deadline</label>
+                  <input id="input-date" type="date" name="date" required>
+                  <button>Create</button>
+                </form>
+                <filters>
+                  <button data-filter="past">History</button>
+                  <button data-filter="futur">Todo</button>
+                  <button data-filter="all">All</button>
+                </filters>
+                <todo-list id="todo-list-container">
+      
+                </todo-list>
+              </section>
+              <section class="page hidden" id="page-bookmarks">
+                <p>Bookmark</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                </p>
+              </section>
+        </main>
+        <footer class="footer">
+
+            <div itemscope itemtype="https://schema.org/Person">
+             PWA - WebMobUI | Author: <span itemprop="name">Steve Mettraux</span> <br>
+             <a href="mailto:steve.mettraux@heig-vd.ch" itemprop="email">
+                steve.mettraux@heig-vd.ch</a>
+            </div>
+        </footer>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>

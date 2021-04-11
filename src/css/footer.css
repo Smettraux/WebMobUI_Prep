@@ -1,0 +1,15 @@
+#wrapper > footer{
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    padding: 0.5rem 1em;
+    font-size: var(--font-size-s);
+    border-top: solid var(--border-color) 1px;
+}
+
+#wrapper > footer > span{
+    padding: 0 0.2rem;
+}
+
+#wrapper > footer > a {
+    text-align: right;
+}

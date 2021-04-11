@@ -1,0 +1,43 @@
+[data-action="create-task"] {
+    display: grid;
+    padding-bottom: 1.5rem;
+  }
+  
+  [data-action="create-task"] > * {
+    padding: 0.2rem 0;
+    margin-top: 0.2rem;
+  }
+  
+  [data-action="create-task"] > button {
+    margin-top: 1rem;
+  }
+  
+  #todo-list-container > article {
+    border-top: solid var(--border-color) 1px;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  
+  #todo-list-container > article > header {
+    font-size: var(--font-size-l);
+    padding: 0.5rem 0;
+  }
+  
+  #todo-list-container > article time {
+    color: var(--highlight-color);
+  }
+  
+  #todo-list-container button {
+    border-top-width: 0;
+  }
+  
+  #todo-list-container button::before {
+    font-family: 'icomoon';
+    content: "\e9ac";
+  }
+  
+  filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }

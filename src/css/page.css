@@ -1,0 +1,10 @@
+.page {
+    padding: 1rem;
+    max-width: 30rem;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  
+  .page p {
+    margin: 1rem 0;
+  }

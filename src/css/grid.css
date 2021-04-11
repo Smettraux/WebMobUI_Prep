@@ -1,0 +1,17 @@
+#wrapper > header {grid-area: header}
+#wrapper > main {grid-area: main}
+#wrapper > nav {grid-area: nav}
+#wrapper > footer {grid-area: footer}
+#wrapper {
+  display: grid;
+  min-height: 100%;
+}
+#wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+   "header"
+   "nav"
+   "main"
+   "footer"
+}

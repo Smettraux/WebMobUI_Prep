@@ -1,0 +1,51 @@
+#wrapper > nav {
+    border-bottom: solid var(--border-color) 1px;
+  }
+
+#wrapper > nav ul {
+    user-select: none;
+    list-style-type: none;
+    text-align:center;
+    border-bottom: solid var(--border-color) 1px;
+}
+
+#wrapper > nav li {
+    font-size: 1.2rem;
+    display: inline-block;
+  }
+
+#wrapper > nav li:not(:last-child)::after {
+   content: '|';    color: var(--border-color);
+}
+
+#wrapper > nav li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+
+  @media screen and (max-width: 32rem), screen and (max-device-width: 32rem) {
+    #wrapper > nav ul {
+       display: none;
+    }
+    #wrapper > nav::before {
+      display: inline-block;
+      font-family: 'icomoon';
+      content: "\e9bd"; /* code du caractère dans le fichier icomoon*/
+      padding: 0.5rem;
+      font-size: var(--font-size-xl);
+      cursor: pointer;
+    }
+    #wrapper > nav li {
+      display: block;
+    }
+    #wrapper > nav li a{
+      display: block;
+    }
+    #wrapper > nav li:not(:last-child)::after {
+      content: '';
+    }
+    #wrapper > nav li:not(:last-child) {
+      border-bottom: solid 1px var(--border-color);
+    }
+  }
